@@ -23,7 +23,7 @@ if randint(1, 5) == 1:
 Their company was at the {words[7]} building
 To make a computer, you need to take a lot of {words[3]}, melt them down, and 
 make {words[4]} {words[5]}. Then you should have a {words[6]}. Get some more {words[5]},
-combine it with the {words[6]}"""
+and combine it with the {words[6]}"""
     print(sentences)
 elif randint(1, 5) == 2:
     sentences = f"""There was once a {words[0]} {words[1]} princess named {words[2]} at 
