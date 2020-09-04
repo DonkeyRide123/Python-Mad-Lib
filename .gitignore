@@ -1,129 +1,48 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+from random import *
 
-# C extensions
-*.so
+words = []
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+def prompt(kind):
+    ask = 'Please Enter ' + kind + ": "
+    word = input(ask)
+    words.append(word)
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+prompt("an adjective")
+prompt("a nationality")
+prompt("a person")
+prompt("a plural noun")
+prompt('an adjective')
+prompt('a plural noun')
+prompt('a noun')
+prompt('a place')
+if randint(1, 5) == 1:
+    sentences = f"""Computers were invented by a 
+{words[0]} {words[1]} engineer named {words[2]}.
+Their company was at the {words[7]} building
+To make a computer, you need to take a lot of {words[3]}, melt them down, and 
+make {words[4]} {words[5]}. Then you should have a {words[6]}. Get some more {words[5]},
+combine it with the {words[6]}"""
+    print(sentences)
+elif randint(1, 5) == 2:
+    sentences = f"""There was once a {words[0]} {words[1]} princess named {words[2]} at 
+the {words[7]} castle.
+She had many {words[3]}, she loved them, then one day, she met a {words[4]} man, she wanted to date him.
+Princess {words[2]} gave him many {words[5]}. Then, {words[2]} proposed to the man with a {words[6]},
+and the man accepted!"""
+    print(sentences)
+elif randint(1, 5) == 3:
+    sentences = f"""The Playstation was invented by a {words[0]} {words[1]} man named {words[2]}.
+He made it with {words[3]}, and then bought some {words[4]} {words[5]}. It was made at the {words[7]} building.
+Then {words[2]} bought a {words[6]} because {words[2]} wanted one."""
+    print(sentences)
+elif randint(1, 5) == 4:
+    sentences = f"""There was a {words[0]} {words[1]} named {words[2]}. He worked as a clown in the Emtwood circus.
+Then one day, {words[3]} attacked him. He was recovering in the {words[4]} {words[7]}. And then he died.
+While in heaven, {words[2]} hated {words[5]}"""
+    print(sentences)
+elif randint(1, 5) == 5:
+    sentences = f"""Once upon a time a {words[0]} {words[1]} person named {words[2]}. {words[2]} worked at a bakery at {words[6]}.
+{words[2]} loved working at {words[6]}. Everyday, {words[2]} made a """
+    print(sentences)
