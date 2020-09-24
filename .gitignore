@@ -1,6 +1,7 @@
 from random import *
 
 words = []
+storyChoice = randint(1, 5)
 
 
 def prompt(kind):
@@ -17,7 +18,7 @@ prompt('an adjective')
 prompt('a plural noun')
 prompt('a noun')
 prompt('a place')
-if randint(1, 5) == 1:
+if storyChoice == 1:
     sentences = f"""Computers were invented by a 
 {words[0]} {words[1]} engineer named {words[2]}.
 Their company was at the {words[7]} building
@@ -25,24 +26,24 @@ To make a computer, you need to take a lot of {words[3]}, melt them down, and
 make {words[4]} {words[5]}. Then you should have a {words[6]}. Get some more {words[5]},
 and combine it with the {words[6]}"""
     print(sentences)
-elif randint(1, 5) == 2:
+elif storyChoice == 2:
     sentences = f"""There was once a {words[0]} {words[1]} princess named {words[2]} at 
 the {words[7]} castle.
 She had many {words[3]}, she loved them, then one day, she met a {words[4]} man, she wanted to date him.
 Princess {words[2]} gave him many {words[5]}. Then, {words[2]} proposed to the man with a {words[6]},
 and the man accepted!"""
     print(sentences)
-elif randint(1, 5) == 3:
+elif storyChoice == 3:
     sentences = f"""The Playstation was invented by a {words[0]} {words[1]} man named {words[2]}.
 He made it with {words[3]}, and then bought some {words[4]} {words[5]}. It was made at the {words[7]} building.
 Then {words[2]} bought a {words[6]} because {words[2]} wanted one."""
     print(sentences)
-elif randint(1, 5) == 4:
+elif storyChoice == 4:
     sentences = f"""There was a {words[0]} {words[1]} named {words[2]}. He worked as a clown in the Emtwood circus.
 Then one day, {words[3]} attacked him. He was recovering in the {words[4]} {words[7]}. And then he died.
 While in heaven, {words[2]} hated {words[5]}"""
     print(sentences)
-elif randint(1, 5) == 5:
+elif storyChoice == 5:
     sentences = f"""Once upon a time a {words[0]} {words[1]} person named {words[2]}. {words[2]} worked at a bakery at {words[6]}.
 {words[2]} loved working at {words[6]}. Everyday, {words[2]} made a """
     print(sentences)
